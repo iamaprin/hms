@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>超级管理员——登陆</title>
+    <link rel="stylesheet" type="text/css" href="${contextPath}/style/global.css">
+    <link type="text/css" rel="stylesheet" href="${contextPath}/style/bootstrap.min.css">
+    <script src="${contextPath}/script/jquery-2.2.3.js"></script>
+    <script src="${contextPath}/script/bootstrap.min.js"></script>
+    <script>
+        function doLogin() {
+            var adminName = $("#admin-name").val();
+            var adminPass = $("#admin-pass").val();
+
+            if (adminName == "" || adminPass == "") {
+                $("#tip").text("账号或密码不能为空！");
+                return;
+            }
+
+            var jsonData = {
+                "adminName": adminName,
+                "adminPass": adminPass
+            };
+
+            $.getJSON("${contextPath}/admin/login", jsonData, function (data) {
+                console.log(data)
+                if (data == true) {
+                    console.log("login success");
+                    window.location.href = "${contextPath}/admin/manage";
+                } else {
+                    console.log("login failure");
+                    $("#tip").text("账号或密码错误！");
+                }
+            });
+        }
+
+        function hideTip() {
+            $("#tip").text("");
+        }
+    </script>
+
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="header">
+    </div>
+    <div class="content">
+
+        <table>
+            <tbody class="content-tbody">
+            <tr>
+                <td>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1">账号</span>
+                        <input type="text" class="form-control" id="admin-name" aria-describedby="basic-addon1" onfocus="hideTip()">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon2">密码</span>
+                        <input type="password" class="form-control" id="admin-pass" aria-describedby="basic-addon2" onclick="hideTip()">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="btn-group" role="group" aria-label="...">
+                        <button type="button" class="btn btn-default" onclick="doLogin()">登陆</button>
+                    </div>
+                    <p class="admin_tip" id="tip"></p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>

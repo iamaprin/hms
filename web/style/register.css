@@ -1,0 +1,65 @@
+/*挂号*/
+
+/*----------------------------*/
+.left {
+    float: left;
+    width: 70%;
+    height: 100%;
+    border-right: #818181 1px solid;
+}
+
+.register {
+    position: relative;
+    top: 100px;
+    width: 450px;
+    height: 300px;
+    margin: auto;
+}
+
+.register-select {
+    height: 32px;
+    padding: 0 0 0 5px;
+}
+.select-sex {
+    width: 60px;
+}
+
+.select-dept {
+    width: 200px;
+}
+
+.tip-login {
+    padding: 0 0 0 20px;
+}
+
+/*----------------------------*/
+.right {
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+
+.right-header {
+    position: relative;
+    top: 40px;
+    height: 60px;
+}
+
+.right-header > p {
+    margin: 0;
+    padding: 0 0 0 12px;
+    line-height: 60px;
+    font-size: 18px;
+
+}
+
+.right-list {
+    position: relative;
+    top: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.right-list > label {
+    margin: 0;
+}

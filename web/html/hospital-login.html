@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>医院登陆</title>
+    <script src="../script/jquery-2.2.3.js"></script>
+    <script>
+        $("#hosp_btn_submit").click(function () {
+            var jsonData = {
+                "hospName": $("#hosp_name").val(),
+                "hospPass": $("#hosp_pass").val()
+            };
+
+            $.getJSON("../hospLogin", jsonData, function (data) {
+                if (data == true) {
+                    alert("login success")
+                } else {
+                    alert("login failure")
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="header">
+    </div>
+    <div class="content">
+        <table>
+            <tbody>
+                <tr>
+                    <th>账号</th>
+                    <td><input type="text" id="hosp_name"></td>
+                </tr>
+                <tr>
+                    <th>密码</th>
+                    <td><input type="password" id="hosp_pass"></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td><input type="submit" value="登陆" id="hosp_btn_submit"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="footer"></div>
+
+</body>
+</html>

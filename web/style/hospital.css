@@ -1,0 +1,63 @@
+/*登陆界面*/
+.login {
+    position: relative;
+    top: 100px;
+    width: 450px;
+    height: 300px;
+    margin: auto;
+}
+
+.login-tip {
+    position: relative;
+    top: 5px;
+}
+/*--------------------------*/
+
+/*管理界面*/
+.left {
+    width: 20%;
+    height: 100%;
+    float: left;
+    background: #515151;
+}
+
+.left-item {
+    height: 60px;
+    font-size: 16px;
+    line-height: 38px;
+}
+
+.right {
+    width: 80%;
+    height: 100%;
+    float: left;
+}
+
+.right-1 {
+    height: 100%;
+}
+
+/*--------------------------*/
+
+/*药房值班管理*/
+.right-table {
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+
+.right-1-btn {
+    position: relative;
+    top: 105px;
+    left: 50px;
+}
+
+.disabled {
+    color: #aaaaaa;
+}
+
+
+/**/
+.hidden {
+    display: none;
+}

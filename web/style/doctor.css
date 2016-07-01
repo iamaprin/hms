@@ -1,0 +1,146 @@
+/*登陆界面*/
+.login,
+.register{
+    position: relative;
+    top: 100px;
+    width: 450px;
+    height: 300px;
+    margin: auto;
+}
+
+/*
+.tip-register {
+    position: relative;
+    top: 5px;
+}
+*/
+
+.tip-login,
+.tip-register {
+    padding: 0 0 0 17px;
+}
+
+.login-select {
+    height: 32px;
+    padding: 0 0 0 5px;
+}
+.select-sex {
+    width: 60px;
+}
+
+.select-dept {
+    width: 200px;
+}
+
+/*管理界面*/
+/*左*/
+.left {
+    width: 20%;
+    height: 100%;
+    float: left;
+    background: #515151;
+}
+
+.left-item {
+    height: 60px;
+    font-size: 16px;
+    line-height: 38px;
+}
+
+/*右*/
+.right {
+    width: 80%;
+    height: 100%;
+    float: left;
+}
+
+.right-padding {
+    padding-left: 0;
+}
+
+/*!*右头部*!*/
+/*.right-header {*/
+    /*width: 400px;*/
+    /*position: relative;*/
+    /*top: 20px;*/
+    /*left: 50px;*/
+/*}*/
+
+/*.right-header > span {*/
+    /*padding: 0 0 0 20px;*/
+/*}*/
+
+/*.right-body {*/
+    /*position: relative;*/
+    /*top: 20px;*/
+    /*left: 50px;*/
+/*}*/
+
+/*.body-form {*/
+    /*width: 60%;*/
+/*}*/
+
+.left-div1 {
+    width: 100%;
+    height: 120px;
+    text-align: center;
+}
+
+.div1-padding {
+    padding: 40px 0 0 0;
+}
+
+.div1-span {
+    color: #f6f6f6;
+    margin: 0;
+}
+
+.green {
+    color: #00ff00;
+}
+
+.red {
+    color: #ff0000;
+}
+
+.left-div2 {
+    height: 300px;
+}
+
+
+.right-table {
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+
+.right-1 {
+    height: 100%;
+}
+
+.right-1-btn {
+    position: relative;
+    top: 100px;
+}
+
+.right-2-padding {
+    float: left;
+    padding: 50px 50px 0 50px;
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

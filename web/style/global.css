@@ -1,0 +1,40 @@
+* {
+    font-family: "微软雅黑", sans-serif;
+}
+
+/*头部样式*/
+.header {
+    height: 80px;
+    background: #f6f6f6;
+    border-bottom: #818181 1px solid;
+}
+
+.hms {
+    font-size: 26px;
+    line-height: 80px;
+    padding: 0 0 0 40px;
+    margin: 0;
+}
+
+.user-role {
+    font-size: 16px;
+}
+
+.nested {
+    /*line-height: 80px;
+    position: relative;
+    top: 20px;
+    right: 20px;*/
+    margin: 20px 0 0 0;
+}
+
+/*鼠标*/
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/*提示*/
+.tip {
+    font-size: 14px;
+    color: #f00;
+}

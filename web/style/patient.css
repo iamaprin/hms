@@ -1,0 +1,34 @@
+/*登陆界面*/
+.login {
+    position: relative;
+    top: 100px;
+    width: 450px;
+    height: 300px;
+    margin: auto;
+}
+
+.tip-login {
+    padding: 0 0 0 17px;
+}
+
+/*管理界面*/
+.left {
+    float: left;
+    width: 20%;
+    height: 100%;
+    border-right: #347ab7 1px solid;
+}
+
+.right {
+    float: left;
+    padding: 50px 50px 0 50px;
+    width: 80%;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.reply-list {
+
+}
